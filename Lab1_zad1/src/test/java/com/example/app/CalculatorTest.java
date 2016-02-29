@@ -23,7 +23,7 @@ public class CalculatorTest {
 	}
 	@Test
 	public void multiCheck(){
-		assertEquals(8, calc.multi(4,4));
+		assertEquals(8, calc.multi(4,2));
 		
 	}
 	@Test
