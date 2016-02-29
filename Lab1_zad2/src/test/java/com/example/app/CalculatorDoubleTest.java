@@ -25,7 +25,7 @@ public class CalculatorDoubleTest {
 	}
 	@Test
 	public void multiCheck(){
-		assertEquals(8.0, calc.multi(4.0,4.0),0);
+		assertEquals(8.0, calc.multi(4.0,2.0),0);
 		
 	}
 	@Test
