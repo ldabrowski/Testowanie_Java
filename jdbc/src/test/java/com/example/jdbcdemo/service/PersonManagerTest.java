@@ -15,10 +15,10 @@ public class PersonManagerTest {
 	
 	private final static String NAME_1 = "Zenek";
 	private final static int YOB_1 = 1945;
-	private final static String NAME_2 = "Franek";
-	private final static int YOB_2 = 1945;
-	private final static String NAME_3 = "Tadeusz";
-	private final static int YOB_3 = 1956;
+	private final static String NAME_2 = "Henryk";
+	private final static int YOB_2 = 1944;
+	private final static String NAME_3 = "Aleksander";
+	private final static int YOB_3 = 1950;
 	
 	@Test
 	public void checkConnection(){
