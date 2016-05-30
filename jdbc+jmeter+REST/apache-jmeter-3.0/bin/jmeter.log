@@ -1,0 +1,74 @@
+2016/05/30 01:53:38 INFO  - jmeter.util.JMeterUtils: Setting Locale to pl_PL 
+2016/05/30 01:53:38 INFO  - jmeter.util.JMeterUtils: Could not find resources for 'pl_PL', using 'pl' 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Loading user properties from: C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin\user.properties 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Loading system properties from: C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin\system.properties 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Copyright (c) 1998-2016 The Apache Software Foundation 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Version 3.0 r1743807 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: java.version=1.8.0_91 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: os.name=Windows 10 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: os.arch=amd64 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: os.version=10.0 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: file.encoding=Cp1250 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Max memory     =1890582528 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Available Processors =4 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Default Locale=polski (Polska) 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: JMeter  Locale=polski (Polska) 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: JMeterHome=C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: user.dir  =C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: PWD       =C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: IP: 192.168.0.15 Name: Lenovo-PC FullName: Lenovo-PC 
+2016/05/30 01:53:38 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: javax.swing.plaf.metal.MetalLookAndFeel [Metal, CrossPlatform] 
+2016/05/30 01:53:38 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2016/05/30 01:53:39 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/05/30 01:53:39 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/05/30 01:53:39 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser 
+2016/05/30 01:53:40 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2016/05/30 01:53:40 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin\proxyserver.jks 
+2016/05/30 01:53:40 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.config.MongoSourceElement 
+2016/05/30 01:53:40 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.mongodb.sampler.MongoScriptSampler 
+2016/05/30 01:53:41 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.DistributionGraphVisualizer 
+2016/05/30 01:53:41 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2016/05/30 01:53:41 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2016/05/30 01:53:41 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2016/05/30 01:53:41 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2016/05/30 01:53:41 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.visualizers.SplineVisualizer 
+2016/05/30 01:53:51 INFO  - jmeter.services.FileServer: Default base='C:\Users\Lukasz\Desktop\moj rest\apache-jmeter-3.0\bin' 
+2016/05/30 01:53:51 INFO  - jmeter.gui.action.Load: Loading file: C:\Users\Lukasz\Desktop\moj rest\jMeter\restApi.jmx 
+2016/05/30 01:53:51 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Lukasz\Desktop\moj rest\jMeter' 
+2016/05/30 01:53:51 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2016/05/30 01:53:51 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2016/05/30 01:53:51 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.9 
+2016/05/30 01:53:51 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2016/05/30 01:53:51 INFO  - jmeter.save.SaveService: Loading file: C:\Users\Lukasz\Desktop\moj rest\jMeter\restApi.jmx 
+2016/05/30 01:53:51 INFO  - jmeter.services.FileServer: Set new base='C:\Users\Lukasz\Desktop\moj rest\jMeter' 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/05/30 01:53:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/05/30 01:53:58 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/05/30 01:53:58 ERROR - jmeter.protocol.jdbc.config.DataSourceElement: JDBC data source already defined for: HSQLDBPool 
+2016/05/30 01:53:58 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : insert 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group insert. 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/05/30 01:53:58 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/05/30 01:53:58 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : tests 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group tests. 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/05/30 01:53:58 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/05/30 01:53:58 INFO  - jmeter.threads.JMeterThread: Thread started: insert 1-1 
+2016/05/30 01:53:58 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/05/30 01:53:58 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/05/30 01:53:58 INFO  - jmeter.threads.JMeterThread: Thread started: tests 2-1 
+2016/05/30 01:53:59 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = Lenovo-PC 
+2016/05/30 01:53:59 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2016/05/30 01:53:59 INFO  - jmeter.threads.JMeterThread: Thread is done: tests 2-1 
+2016/05/30 01:53:59 INFO  - jmeter.threads.JMeterThread: Thread finished: tests 2-1 
+2016/05/30 01:54:32 INFO  - jmeter.reporters.ResultCollector: Shutdown hook started 
+2016/05/30 01:54:32 INFO  - jmeter.reporters.ResultCollector: Shutdown hook ended 
