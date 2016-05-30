@@ -22,6 +22,8 @@ public class RocketManager {
 	private PreparedStatement deleteAllRocketsStmt;
 	private PreparedStatement getAllRocketsStmt;
 	private PreparedStatement getRocketByIdStmt;
+	private PreparedStatement deleteRocketStmt;
+	private PreparedStatement updateRocketStmt;
 	
 	private Statement statement;
 	
@@ -51,6 +53,11 @@ public class RocketManager {
 					.prepareStatement("SELECT id, mark, model, price FROM Rocket");
 			getRocketByIdStmt = connection
 					.prepareStatement("SELECT id, mark, model, price FROM Rocket where id = ?");
+			deleteRocketStmt = connection
+					.prepareStatement("DELETE FROM Rocket WHERE id = ?");
+			updateRocketStmt = connection
+					.prepareStatement("UPDATE Rocket SET mark = ?, model = ?,price = ?  WHERE id = ?");
+			
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -80,6 +87,34 @@ public class RocketManager {
 			
 			count = addRocketsStmt.executeUpdate();
 		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return count;
+	}
+	
+	public int deleteRocketId(Rocket rocket){
+		int count = 0;
+		try {
+			deleteRocketStmt.setLong(1, rocket.getId());
+			
+			count = deleteRocketStmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return count;
+	}
+	
+	
+	public int updateRocket(Rocket rocket, String mark,String model, int price){
+		int count = 0;
+		try{
+			updateRocketStmt.setString(1, mark);
+			updateRocketStmt.setString(2, model);
+			updateRocketStmt.setInt(3, price);
+			updateRocketStmt.setLong(4, rocket.getId());
+			count = updateRocketStmt.executeUpdate();
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return count;
