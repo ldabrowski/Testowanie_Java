@@ -1,4 +1,4 @@
-Uruchomienie:
+﻿Uruchomienie:
 
 1. W trzech osobnych oknach konsoli przejdź do lokalizacji proejktu!
 
@@ -13,6 +13,6 @@ Uruchomienie:
 
 6. W kliencie bazy zrób INSERT rekordu
 
-7. W przegladarce wpisz http://localhost:8080/restservicedemo/api/person/<adres id wpisany przez INSERTA>
+7. W przegladarce wpisz http://localhost:8080/restservicedemo/api/<nazwa tabeli>/<adres id wpisany przez INSERTA>
 	Powinno pokazać dane wpisane wcześniej przez klienta
 
