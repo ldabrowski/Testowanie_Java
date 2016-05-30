@@ -33,7 +33,7 @@ public class RocketServiceTest {
 	public void addRockets() {
 		delete("/rocket/").then().assertThat().statusCode(200);
 
-		Rocket rocket = new Rocket(1L, ROCKET_MARK, ROCKET_MODEL, 500);
+		Rocket rocket = new Rocket(1, ROCKET_MARK, ROCKET_MODEL, 500);
 
 		given().contentType(MediaType.APPLICATION_JSON).body(rocket).when().post("/rocket/").then().assertThat()
 				.statusCode(201);
