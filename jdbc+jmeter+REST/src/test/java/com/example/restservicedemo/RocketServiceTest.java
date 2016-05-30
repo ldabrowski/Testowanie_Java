@@ -4,10 +4,8 @@ import static com.jayway.restassured.RestAssured.delete;
 import static com.jayway.restassured.RestAssured.get;
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-//import static org.hamcrest.Matchers.containsString;
-//import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 import javax.ws.rs.core.MediaType;
 
@@ -16,8 +14,11 @@ import org.junit.Test;
 
 import com.example.restservicedemo.domain.Rocket;
 import com.jayway.restassured.RestAssured;
+import com.example.restservicedemo.service.RocketManager;
 
 public class RocketServiceTest {
+	
+	private RocketManager rm = new RocketManager();
 
 	public static final String ROCKET_MARK = "Head";
 	public static final String ROCKET_MODEL = "Graphen Pro";
@@ -75,9 +76,26 @@ public class RocketServiceTest {
 		assertThat(ROCKET_MODEL, equalToIgnoringCase(rRocket.getModel()));
 		assertThat(ROCKET2_MODEL, equalToIgnoringCase(rRocket2.getModel()));
 				
-				
-				
-		//assertNotNull(rockets);
 	}
+	
+	@Test
+	public void deleteAllRockets(){
+		String rockets = get("/rocket/all/").asString();
+		
+		delete("/rocket/").then().assertThat().statusCode(200);
+
+		Rocket rocket = new Rocket(1, ROCKET_MARK, ROCKET_MODEL, 500);
+
+		given().contentType(MediaType.APPLICATION_JSON).body(rocket).when().post("/rocket/").then().assertThat()
+				.statusCode(201);
+
+		Rocket rRocket = get("/rocket/1").as(Rocket.class);
+		
+		rm.clearRockets();
+		
+		assertNull(rockets, null);
+		
+	}
+	
 
 }
