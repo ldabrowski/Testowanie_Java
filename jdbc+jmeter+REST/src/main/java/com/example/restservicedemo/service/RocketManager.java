@@ -24,6 +24,7 @@ public class RocketManager {
 	private PreparedStatement getRocketByIdStmt;
 	private PreparedStatement deleteRocketStmt;
 	private PreparedStatement updateRocketStmt;
+	private PreparedStatement getRocketByMarkStmt;
 	
 	private Statement statement;
 	
@@ -53,6 +54,8 @@ public class RocketManager {
 					.prepareStatement("SELECT id, mark, model, price FROM Rocket");
 			getRocketByIdStmt = connection
 					.prepareStatement("SELECT id, mark, model, price FROM Rocket where id = ?");
+			getRocketByMarkStmt = connection
+					.prepareStatement("SELECT mark, model FROM Rocket where mark = ?");
 			deleteRocketStmt = connection
 					.prepareStatement("DELETE FROM Rocket WHERE id = ?");
 			updateRocketStmt = connection
@@ -160,4 +163,25 @@ public class RocketManager {
 		}
 		return r;
 	}
+	
+	public List<Rocket> getRocketByMark(String mark) {
+		List<Rocket> rockets = new ArrayList<Rocket>();
+		try {
+			getRocketByMarkStmt.setString(1, mark);
+			ResultSet rs = getAllRocketsStmt.executeQuery();
+
+			while (rs.next()) {
+				Rocket r = new Rocket();
+				r.setId(rs.getInt("id"));
+				r.setMark(rs.getString("mark"));
+				r.setModel(rs.getString("model"));
+				r.setPrice(rs.getInt("price"));
+				rockets.add(r);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return rockets;
+	}
+	
 }

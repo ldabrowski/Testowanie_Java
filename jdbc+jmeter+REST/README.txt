@@ -16,3 +16,5 @@
 7. W przegladarce wpisz http://localhost:8080/restservicedemo/api/<nazwa tabeli>/<adres id wpisany przez INSERTA>
 	Powinno pokazać dane wpisane wcześniej przez klienta
 
+8. W przegladarce wpisz http://localhost:8080/restservicedemo/api/mark/<szukaną markę>
+	Powinno pokazać rakiety danej marki

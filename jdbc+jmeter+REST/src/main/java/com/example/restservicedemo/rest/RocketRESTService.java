@@ -29,6 +29,14 @@ public class RocketRESTService {
 		return r;
 	}
 	
+	@GET
+	@Path("/mark/{mark}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Rocket> getRocketByMark(@PathParam("mark") String mark){
+		List<Rocket> Rocket = rm.getRocketByMark(mark);
+		return Rocket;
+	}
+	
 	@POST
 	@Path("/")
 	@Consumes(MediaType.APPLICATION_JSON)
