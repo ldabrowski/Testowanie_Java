@@ -8,7 +8,7 @@ Uruchomienie:
 
 4. W trzecim uruchom serwer web z usług RESTową poleceniem - mvn jetty:run
 
-5. Wpisz w pregladarkę adres: http://localhost:8080/restservicedemo/api/person/test
+5. Wpisz w pregladarkę adres: http://localhost:8080/restservicedemo/api/rocket/testRocket
 	Powinno być: "REST Service is running"
 
 6. W kliencie bazy zrób INSERT rekordu
