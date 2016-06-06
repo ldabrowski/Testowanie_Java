@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <ROCKET ID="1" MARK="Head" MODEL="model1" PRICE="200"/>
+  <ROCKET ID="2" MARK="Willson" MODEL="model2" PRICE="300"/>
+  <ROCKET ID="3" MARK="Willson" MODEL="model3" PRICE="400"/>
+  <ROCKET ID="4" MARK="Head" MODEL="model4" PRICE="500"/>
+  <ROCKET ID="5" MARK="Yonex" MODEL="model5" PRICE="200"/>
+  
+</dataset>
