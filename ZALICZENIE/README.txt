@@ -13,6 +13,9 @@ Uruchomienie:
 
 6. W kliencie bazy zrób INSERT rekordu
 
-7. W przegladarce wpisz http://localhost:8080/restservicedemo/api/person/<adres id wpisany przez INSERTA>
+7. W przegladarce wpisz http://localhost:8080/restservicedemo/api/rocket/<adres id wpisany przez INSERTA>
 	Powinno pokazać dane wpisane wcześniej przez klienta
+	
+8. W przegladarce wpisz http://localhost:8080/restservicedemo/api/mark/<marka>
+	Powinno pokazać wpisaną markę rakiet
 
